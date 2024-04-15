@@ -1,5 +1,5 @@
 function checkForSpam(message) {
-    for (forbiddenWord of ['spam', 'sale']) {
+    for (const forbiddenWord of ['spam', 'sale']) {
         if (message.toLowerCase().includes(forbiddenWord)) return true;
     }
     return false;
